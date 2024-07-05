@@ -1,0 +1,16 @@
+id                  SMALLINT                PRIMARY_KEY             AUTO_INCREMENT       NOT_NULL  
+marca               VARCHAR(20)             NOT_NULL                 
+modello             VARCHAR(30)             NOT_NULL
+km                  SMALLINT                NOT_NULL                DEFAULT(0)
+immatricolazione    DATE                    NOT_NULL
+anno                YEAR                    NOT_NULL
+colore              VARCHAR(30)             NOT_NULL
+se_usata            BOOLEAN                 NOT_NULL                DEFAULT(0)
+n_proprietari       TINYINT                 NOT_NULL                DEFAULT(0)
+carburante          VARCHAR(20)             NOT_NULL
+n_porte             TINYINT                 NOT_NULL                DEFAULT(2)
+n_sedili            TINYINT                 NOT_NULL                DEFAULT(1)
+potenza_cilindri    TINYINT                 NOT_NULL                DEFAULT(1)
+engine_power        SMALLINT                NOT_NULL
+prezzo              FLOAT(10,2)             NOT_NULL
+note                TEXT                    DEFAULT('')
